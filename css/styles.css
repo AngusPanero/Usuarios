@@ -1,8 +1,10 @@
 body {
   font-family: Arial, sans-serif;
   background-color: #f4f4f4;
-  margin: 0;
-  padding: 20px;
+  margin: 0px;
+  padding: 0px;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -12,5 +14,31 @@ h1 {
 
 img{
   width: 5rem;
-  height: auto;
+  height: 5rem;
 }
+
+ul{
+  display: flex;
+  gap: 3rem;
+  width: 4rem;
+}
+
+li{
+  padding: 15px;
+  display: flex;
+  gap: 20px;
+  border: 2px solid aquamarine;
+  height: 15rem;
+}
+
+p{
+  font-size: 15px;
+  width: 22rem;
+}
+
+.address{
+  display: flex;
+  border: 2px solid blue;
+  
+}
+

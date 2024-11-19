@@ -24,18 +24,16 @@ function usuersFetch () {
         const {name: nombreComapñia} = company // le doy un nombre random al {name: ""}
 
         crearLi.innerHTML = `
-        <img src="${imgUser}">
         <div class="datosPersonales">
             <p>Nombre: ${name}</p>
             <p>Edad: ${numeroAle}</p>
             <p>Username: ${username}</p>
             <p>Telefono: ${phone}</p>
             <p>Email: ${email}</p>
+            <p class="address">Compañia: ${company.name}</p>
+            <p class="address">Direccion: ${street}, ${suite}, ${city}</p>
         </div>
-        <div class="compañia">
-            <p>Compañia: ${company.name}</p>
-            <p>Direccion: ${street}, ${suite}, ${city}</p>
-        </div>
+        <img src="${imgUser}">
         `// aca ${voy directo al valor} por la desestructuracion no hace falta poner user.email pongo directo ${email}        
         obtenerUl.appendChild(crearLi);
         });
